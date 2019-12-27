@@ -17,7 +17,7 @@ def load_people(filename):
     with open(
             filename,
             "r") as f:
-        data = [line for line in f.read().split("\n")]
+        data = [line for line in f.read().split()]
 
     # If you wanna use dictionary
     # data_final = {}
