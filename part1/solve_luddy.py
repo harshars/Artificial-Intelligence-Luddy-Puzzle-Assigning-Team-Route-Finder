@@ -158,21 +158,21 @@ if __name__ == "__main__":
         raise(Exception("Error: couldn't parse start state file"))
 
     if(sys.argv[2] == "circular"):
-        MOVES.update({ "R1" : (0, -3)})
-        MOVES.update({ "L1" : (0, 3)})
+        MOVES.update({ "L1" : (0, -3)})
+        MOVES.update({ "R1" : (0, 3)})
         MOVES.update({ "D1" : (-3, 0)})
         MOVES.update({ "U1" : (3,0)})
 
     if(sys.argv[2] == "luddy"):
         MOVES = {}
-        MOVES.update({ "E" : (-2, -1)})
-        MOVES.update({ "F" : (-2, 1)})
-        MOVES.update({ "G" : (2, -1)})
-        MOVES.update({ "H" : (2, 1)})
-        MOVES.update({ "A" : (-1, -2)})
-        MOVES.update({ "B" : (-1, 2)})
-        MOVES.update({ "C" : (1, -2)})
-        MOVES.update({ "D" : (1, 2)})
+        MOVES.update({ "D" : (-2, -1)})
+        MOVES.update({ "C" : (-2, 1)})
+        MOVES.update({ "B" : (2, -1)})
+        MOVES.update({ "A" : (2, 1)})
+        MOVES.update({ "H" : (-1, -2)})
+        MOVES.update({ "G" : (-1, 2)})
+        MOVES.update({ "F" : (1, -2)})
+        MOVES.update({ "E" : (1, 2)})
 
     print("Start state: \n" +"\n".join(printable_board(tuple(start_state))))
 
